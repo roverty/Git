@@ -1,7 +1,7 @@
 #  Curso git
 
 ```shell
-Septiembre 2020
+Mayo 2021
 Author : rhodfra@gmail.com
 git  2.28.0 | gitub | gitlab | bitbucket
 ```
@@ -12,6 +12,38 @@ git  2.28.0 | gitub | gitlab | bitbucket
 El objetivo de este curso es conocer las herramientas básicas de git. También se esbozará un panorama general de como funciona el desarrollo colaborativo (ya se para un proyecto público o privado) utilizando github, gitlab e inclusive bitbucket. Para poder desarrollar software con un equipo de trabajo es necesario conocer todas la buenas prácticas posibles, analizaremos eso y más.
 
 No se requiere de ningún antecedente previo.
+
+## Cheatsheet
+
+### Configuración de editor
+
+```sh
+git --global core.editor nvim
+```
+
+### Git log en forma de grafo
+
+```sh
+git log --all --decorate --oneline --graph
+```
+
+### Cache credentials
+
+Esta opción permite guardar temporalmente las credenciales del usuario para no ponerlas a cada rato. 
+
+*Solo funciona con repositorio que usa HTTPS*
+
+* Set git to use the credential memory cache
+
+  ```sh
+  git config --global credential.helper cache
+  ```
+
+* Set the cache to timeout after 1 hour (setting is in seconds)
+
+  ```sh
+  git config --global credential.helper 'cache --timeout=3600' 
+  ```
 
 ## Temario
 
@@ -51,4 +83,5 @@ No se requiere de ningún antecedente previo.
 * [The Definitive Guide to Forks and Branches in Git](https://blog.gitprime.com/the-definitive-guide-to-forks-and-branches-in-git/)
 
 * [Consejos para el Código Abierto](https://eddiejaoude.github.io/book-open-source-tips/index-es.html#_god_pull_request)
-* [under_scores, camelCase and PascalCase - The three naming conventions every programmer should be aware of](https://dev.to/prahladyeri/underscores-camelcasing-and-pascalcasing-the-three-naming-conventions-every-programmer-should-be-aware-of-3aed) 
+* [under_scores, camelCase and PascalCase - Naming Conventions](https://dev.to/prahladyeri/underscores-camelcasing-and-pascalcasing-the-three-naming-conventions-every-programmer-should-be-aware-of-3aed) 
+

@@ -195,3 +195,25 @@ Cómo se observa, el concepto de directorio padre es irrelevante para las rutas 
 Se recomienda evitar el uso de rutas absolutas.
 
 El único caso para donde se suelen usar es para configuraciones del sistema.
+
+### Extras
+
+**Para windows**
+
+* Copiar un archivo
+  * `copy <nombreArchivo> <destino>`
+  * Ejemplo. Copiar el archivo `hola.c` a la carpeta padre `copy hola.c ../`
+* Mover un archivo
+  * `move <nombreArchivo> <destino>`
+* Crear un directorio
+  * `mkdir nombreDirectorio`
+
+**Para Linux**
+
+* Copiar un archivo
+  * `cp <nombreArchivo> <destino>`
+* Mover un archivo 
+  * `mv <nombreArchivo> <destino>` 
+* Crear un directorio
+  * `mkdir nombreDirectorio`
+
